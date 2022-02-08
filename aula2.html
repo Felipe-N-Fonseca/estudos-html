@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>aula 2</title>
+</head>
+<body>
+    <h1>listas e links</h1>
+    <h2 id="lista-nao-ordenada">lista não ordenada</h2> <!--id é um atributo para localizar aquela tag-->
+    <ul> <!--listas não ordenadas, ou seja sem números-->
+        <li>objeto um</li> <!--novas linhas na lista-->
+        <li>objeto dois</li>
+    </ul>
+    <h2>listas ordenadas</h2>
+    <ol> <!--listas organizadas por números-->
+        <li>objeto três</li>
+        <li>objeto quatro</li>
+    </ol>
+    <dl> <!--lista de definições-->
+        <dt>titulo</dt><!--titulo do que vai ser detalhado-->
+        <dd>detalhes</dd><!--detalhes que vão ficar indentados automaticamente-->
+        <dt>titulo de outro</dt>
+        <dd>outro detalhe</dd>
+    </dl>
+    <h2>links</h2>
+    <a href="https://google.com">link</a><br> <!--tag de link que precisa do href com o link para funcionar-->
+    <a href="#top">voltar ao topo</a><br> <!--para usar um link pra um lugar dentro da pagina, se usa primeiro #,
+    e para o caso da parte de cima , usase o top como padrão-->
+    <a href="#lista-nao-ordenada">lista não ordenada</a><br><!--tag a não adiciona quebra de linha, use a tag br-->
+    <ul> <!--da pra adicionar sublistas apenas as declarando dentro da tag-->
+        <li>
+            objeto um
+            <ul>
+                <li>novo objeto</li>
+            </ul>
+        </li>
+        <li>objeto dois</li>
+        <li>objeto três</li>
+        <li>
+            objeto quatro
+            <ul>
+                <li>
+                    novo objeto
+                    <ul>
+                        <li>novo objeto do objeto</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <nav><!--elemento para a organização de links-->
+        <ul>
+            <li><a href="https://google.com">link</a></li>
+            <li><a href="#top">voltar ao topo</a></li>
+            <li><a href="#lista-nao-ordenada">lista não ordenada</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+
+
+<!--
+    observação: estou usando o PyCharm que é a ide que
+    estou mais familiarizado, espero que não tenha problema.
+-->
