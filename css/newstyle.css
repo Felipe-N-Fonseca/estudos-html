@@ -1,0 +1,30 @@
+header {
+    background-color: #00BFFF;
+    border-radius: 10px;
+    padding: 10px;
+}
+.img-detail {
+    border-radius: 240px;
+    margin: 20px;
+    width: 30%;
+}
+nav {
+    float: left;
+    width: 20%;
+    background: #B0E0E6;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.desc {
+    width: 50%;
+}

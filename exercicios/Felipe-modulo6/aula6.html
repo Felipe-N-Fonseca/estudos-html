@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 6</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h2>fale conosco</h2>
+        </header>
+        <section>
+            <nav>
+                <center>
+                    <ul>
+                        <li><center><a href="./aula5.html">home</a></center></li>
+                        <li><center><a href="#sobre">sobre</a></center></li>
+                        <li><center><a href="#contato">contato</a></center></li>
+                    </ul>
+                </center>
+            </nav>
+            <article>
+                <center><h2>contato</h2></center>
+                <form method="post"><!--tag para formularios, o metodo define pra onde os dados vão-->
+                    <div><!--divide elementos entre si-->
+                        <label for="nome">Nome:</label><!--o atributo for linka ele com o id-->
+                        <input type="text" name="nome" id="nome" placeholder="digite seu nome">
+                        <!--tag de entrada pelo usuario,  atributo placeholder adiciona um texto dentro-->
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="fulano@email.com">
+                        <!--só permite a entrada de emails-->
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" rows="5">digite a mensagem</textarea>
+                        <!--local para inserir um texto-->
+                    </div>
+                    <div>
+                        <label>qual linguagem você prefere: </label><!--escolha uma opção dentre todas-->
+                        <input type="radio" name="linguagens" checked> Python <br>
+                        <input type="radio" name="linguagens"> html <br>
+                        <input type="radio" name="linguagens"> php <br>
+                    </div>
+                    <div>
+                        <label>quais linguagens você conhece: </label><!--escolhe varias opções, value é o valor
+                        que será retornado para o back end-->
+                        <input type="checkbox" name="linguagens" value="python"> Python <br>
+                        <input type="checkbox" name="linguagens" value="html"> html <br>
+                        <input type="checkbox" name="linguagens" value="php"> php <br>
+                    </div>
+                    <div>
+                        <label>qual a cor do camaro amarelo: </label>
+                        <select>
+                            <option selected="">amarelo</option><!--deixa essa opção selecionada por padrão-->
+                            <option>azul</option>
+                            <option>preto</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" >
+                    </div>
+                </form>
+            </article>
+        </section>
+        <footer>
+            <p>desenvolvido por Felipe</p>
+        </footer>
+    </body>
+</html>

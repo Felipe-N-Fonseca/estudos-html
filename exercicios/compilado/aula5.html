@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--tag para adaptar o tamanho do layout ao tamabho da tela do dispositivo-->
+        <style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+    </head>
+    <body>
+        <header><!--tag de cabeçalho da pagina-->
+            <h2>layouts</h2>
+        </header>
+        <section><!--uma sessão dentro da pagina-->
+            <nav>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="./aula6.html">contato</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>texto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nisl ut ante rhoncus maximus varius sit amet nisl. Phasellus blandit ultrices porttitor. Morbi vel ex id lorem convallis egestas vitae non eros. Sed tempor elementum libero sit amet sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed at varius arcu. Pellentesque tempus turpis elit, eu consequat massa fermentum quis. Donec vitae ex in ipsum viverra sagittis. Proin gravida purus non diam sodales, at malesuada enim ullamcorper. Donec ullamcorper lectus vel bibendum pulvinar. Nam cursus eleifend blandit. Donec volutpat sapien sem, eget ultrices elit egestas eget. Praesent ac aliquet augue. Donec a nibh pretium, ullamcorper nunc a, fringilla leo. Aliquam ullamcorper imperdiet ligula, sed venenatis elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <p>Sed eget magna eget elit imperdiet consectetur. Etiam cursus nunc orci, sed gravida ex dapibus at. Morbi fringilla mauris neque, dapibus aliquam elit interdum id. Nullam semper lacus et ante dapibus, sit amet placerat libero efficitur. Nam malesuada nec diam sed facilisis. Proin convallis feugiat nulla nec gravida. Sed sagittis, turpis lacinia tincidunt aliquet, metus mauris iaculis mauris, a tincidunt velit mi sed turpis. Nunc maximus metus nibh, eget semper lectus porta sit amet.</p>
+            </article>
+        </section>
+        <footer>
+            <p>desenvolvido por Felipe</p>
+        </footer>
+    </body>
+</html>
