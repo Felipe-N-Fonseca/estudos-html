@@ -104,7 +104,7 @@ irmão adjacente são os elementos que estão na mesma coluna e que vem na seque
 irmão geral são todos os elementos que estiverem na mesma coluna e vierem depois desse
 
 usar o :houver colado em uma tag define um comportamento ao passar o mouse em cima dela
-a:houver {}
+a:hover {}
 :visited para comportamento de links ja visitados
 a:visited {}
 :active é para um comportamento após clicar em algo
@@ -158,6 +158,29 @@ para as demais, use table tbody tr:nth-cild(0) no parenteses escolha a desejada
 para as linhas pares use even e pra impares use odd
 border-collapse: collapse; para unir as bordas ao invés de ficarem duplicadas
 vertical-align: é a propriedade para alinhar de baixo pra cima ao invés de laterais
+
+LAYOUTS FLUIDOS:
+
+uma alternativa para o 100% é usar o 100vw que significa viewport widht, ou seja o tamanho da pagina, ou para altura vh.
+
+propriedade float ajuda a não quebrar linhas, deixando para o lado escolhido
+box-sizing: border-box; é o que define o que o css vai considerar na hora de usar o tamanho automático, nesse caso, considera o pading e a borda
+overflow: é sobre o conteudo que está fora do body
+com o overlay, voce continua com a barra de rolagem vertical mas não com a lateral
+usando o elemento margin: 0 auto; ele fica centralizado
+
+ADAPTAÇÃO DE IMAGENS PARA WEB:
+
+para repetir uma imagem varias vezes, use o background-repeat: e nele existem as opções
+
+ELEMENTOS GRÁFICOS DO HTML:
+
+para adicionar um scroll em uma div, basta no css usar a propriedade overflow: scroll;
+para transformar uma div em triangulo basta zerar um dos valores do border
+existe um tipo de imagens, svg que são imagens vetoriais, são feitas com a linguagem xml e são extremamente leves.
+da pra usar a tag <canva> também, que é controlado pelo js
+
+
 
 
 */

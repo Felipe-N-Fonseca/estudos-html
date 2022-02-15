@@ -1,0 +1,10 @@
+1° eu notei uma diferença muito grande entre quando eu estava testando 
+chamando pelo meu ide e quando chamei direto o arquivo (prints na pasta),
+queria saber porque acontece isso e como posso resolver.
+
+2° eu tive bastante dificuldade em usar a função :houver que vi na aula,
+no código do style.css da pra ver que tentei usar na tag a.
+
+3° tive o que considero um grande problema quando trabalhei com o tamanho
+da tabela, ja que ela continua ocupando uma grande quantidade de espaço 
+numa pagina menor, e não consegui resolver de maneira alguma.

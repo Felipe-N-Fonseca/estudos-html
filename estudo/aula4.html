@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>aula 4</title>
+</head>
+<body>
+    <h1>tabelas</h1>
+    <table border="1" width="70%"><!--a tag table é a responsavel por fazer uma tabela, border é para configurar a borda
+        width é para a tabela se adaptar ao cumprimento da pagina, se não adicionar o % ele assume que o valor é em px
+        height é para a altura-->
+        <thead><!--cabeçalho da tabela-->
+            <tr>
+                <th>sexo</th>
+                <th>idade</th>
+                <th>altura</th>
+            </tr>
+            <tr>
+                <td colspan="3">linha grande</td><!--colspan assume o tanto de colunas que uma linha vai assumir-->
+            </tr>
+        </thead>
+        <tbody><!--é o corpo da tabela, pode ser criado sem ela e o thead mas eles a organizam melhor-->
+            <tr><!--table row é uma linha da tabela-->
+                <td>masculino</td><!--é a coluna da tabela-->
+                <td>27</td>
+                <td>1.82</td>
+            </tr>
+            <tr align="center"><!--align alinha as colunas ao centro, pode ser usado nas linhas individualmente-->
+                <td>masculino</td>
+                <td>46</td>
+                <td>1.90</td>
+            </tr>
+            <tr>
+                <td bgcolor="#DDDDDD">feminino</td> <!--bgcolor é a cor do fundo-->
+                <td>45</td>
+                <td>1.50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center">rodapé</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table width="100%">
+        <tr>
+            <td colspan="5" height="20" bgcolor="cian"></td>
+        </tr>
+        <tr>
+            <td width="40" height="250" bgcolor="cian"></td>
+            <td bgcolor="green">conteudo</td>
+            <td bgcolor="yellow">conteudo</td>
+            <td bgcolor="red">conteudo</td>
+            <td width="40" bgcolor="cian"></td>
+        </tr>
+        <tr>
+            <td colspan="5" bgcolor="cian" height="20"></td>
+        </tr>
+    </table>
+</body>
+</html>
