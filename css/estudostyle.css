@@ -64,6 +64,13 @@ footer {
 tudo que entra aqui será aplicado nos elementos tipo text
 }
 
+SITES:
+
+lipisium
+remove.bg
+tinypng.com
+color.adobe.com
+
 UNIDADES: 
 
 para medidas temos fixas: px e pt;
@@ -179,6 +186,42 @@ para adicionar um scroll em uma div, basta no css usar a propriedade overflow: s
 para transformar uma div em triangulo basta zerar um dos valores do border
 existe um tipo de imagens, svg que são imagens vetoriais, são feitas com a linguagem xml e são extremamente leves.
 da pra usar a tag <canva> também, que é controlado pelo js
+
+FILTROS E MANIPULAÇÃO COM CSS:
+
+filter: ; é um parametro do css que ja trabalha com alguns por padrão
+grayscale é para usar o cinza
+blur é desfoque, é muito agrssivo, use escalas baixas
+brigtnes é o brilho 100% é o normal
+invert deixa negativo
+opacity para definir a transparencia de um objeto
+saturate é o contraste
+sepia para ficar meio dourado
+drop-shadow cria uma sombra
+usando os (vertical, horizontal, dispersão e cor)
+uma alternativa é o box-shadow:;
+voce pode adicionar varios filtros, simplesmente dando espaço
+
+LAYOUT SEMÂNTICO:
+
+float:; não faz a quebra de linha e posiciona o elemento onde deseja
+para selecionar varios elementos iguais use o ctrl d selecionando o elemento e escreve em todos juntos
+max-widht cuida do tamanho maximo que ela pode ocupar
+se adicionar um espaço na class do html, você usa duas classes pra aquele elemento
+columns: 150px 3; faz com que quando o texto atinja 150px ela quebre, isso em até 3 vezes
+
+NAVEGAÇÃO WEB:
+
+você pode criar uma div com uma class simplismente escrevendo o nome da .class e apertar enter que o resto é automatico
+
+INTRODUÇÃO A WEB DESIGN RESPONSIVO:
+
+primeiro defina o viewport
+para criar um layout para dispositivos diferentes use @media (max-width: 425px){} e dentro das chaves, digite todo o codigo css
+é bom trabalhar com os break points
+que são: desktop 1024, tablet 768 e celular 320
+
+
 
 
 

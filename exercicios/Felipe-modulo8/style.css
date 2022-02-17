@@ -76,6 +76,12 @@ footer {
   border-right: 5px solid #8A8A8A;
   border-bottom: 5px solid #8A8A8A;
 }
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
 div {
   margin: 5px;
   padding: 5px;
@@ -153,16 +159,4 @@ tbody tr:nth-child(odd) {
 }
 #texto{
   margin: 0 auto;
-}
-@media (max-width: 768px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 320px){
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
 }
