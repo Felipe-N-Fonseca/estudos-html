@@ -1,0 +1,136 @@
+LAYOUTS:
+
+dentro do bootstrap se trabalha muito com um conceito de linhas e colunas, assim como em tabelas. row para linhas e col para colunas
+também se pode ocupar o espaço de mais de uma coluna, podendo a soma total ser de 12 colunas, se passar disso ela quebra a linha
+basta colocar col-2 e será duas colunas, col-3 será 3 colunas e assim por diante
+você pode mudar o tamanho que ocupa pela resolução, colocando um espaço entre cada um, col-md-5 col-sm-12, assim ele ocupa 5 na resolução média e 12 na pequena
+
+os breakpoints são:
+
+sm  = >= 576px
+md  = >= 768px
+lg  = >= 992px
+xl  = >= 1200px
+xxl = >= 1400px
+
+você pode regular a largura do conteiner com classes também:
+
+                    < 576px   >= 576px   >= 768px   >= 992px   >= 1200px   >= 1400px
+
+.conteiner       =   100%       540px      720px      960px      1140px        1320px
+.conteiner-sm    =   100%       540px      720px      960px      1140px        1320px
+.conteiner-md    =   100%       100%       720px      960px      1140px        1320px
+.conteiner-lg    =   100%       100%       100%       960px      1140px        1320px
+.conteiner-xl    =   100%       100%       100%       100%       1140px        1320px
+.conteiner-xxl   =   100%       100%       100%       100%       100%          1320px
+.conteiner-fluid =   100%       100%       100%       100%       100%          100%
+
+ELEMENTOS:
+
+justify-content-end bota o conteudo mais para a direita
+img-fluid serve para uma imagem ficar fluida automaticamente
+class card para adicionar itens, como em uma loja virtual
+
+hierarquia de card:
+
+<div class="card">
+    <img>
+    <div class="card-body">
+        <h5 class="card-title">titulo</h5>
+        <p class="card-text">descrição</p>
+        <a class="btn btn-primary" href="">botão</a>
+    </div>
+</div>
+
+formulários com uma aparencia mais profissional:
+
+<form class="form">
+    <div class="input-group">
+        <input class="form-control" type="text" name="nome" placeholder="">
+    </div>
+    <div class="input-group">
+        <input class="form-control" type="text" name="email" placeholder="Digite seu email">
+    </div>
+    <div class="input-group">
+        <textarea class="form-control" name="produto" placeholder="Digite seu produto de interesse" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-success">Enviar</button>
+</form>
+
+MODALS:
+
+modals são aquelas mensagens em pop-up que aparecem para o usuario, assim não precisa de uma página inteira só pra isso, o modelo para um modal é:
+
+<div class="modal fade" id="produto-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"> // cabeçalho do modal
+                <h5 class="modal-title">maçã</h5>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> // esses atributos informam ao bootstrapo que ele deve fazer, nesse caso fechar o modal
+            </div>
+            <div class="modal-body"> // corpo onde o conteúdo está de fato
+                <h6>Tabela de preços:</h6>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>tamanho</t>
+                            <th>preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8cm</td>
+                            <td>R$3.50</td>
+                        </tr>
+                        <tr>
+                            <td>4.5cm</td>
+                            <td>R$2.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+COMPONENTES:
+
+accordion é uma div que abre e fecha, mostrando e escondendo o conteúdo
+exemplos de outros componentes no arquivo conteudo
+
+HELPERS:
+
+São incrementos ao seu codigo que ajudam a controlar algumas coisas
+
+para controlar tamanho, use .ratio
+para uma quebra de linha use .clearfix
+para alinhar objetos, temos a class float, que pro inicio é -start e no fim end
+
+UTILITÁRIOS:
+
+são controles visuais para o projeto, como gradientes, posição de texto e etc.
+ao float vc pode mudar o posicionamento de acordo com o tamanho de tala
+overflow para criar uma barra de rolagem na página
+
+overflow-auto    = cria uma caixa com scroll
+overflow-hidden  = hidden esconde o conteúdo que sair dela
+overflow-visible = mantém sua própria área mas deixa o conteudo sair caso seja maior
+overflow-scroll  = cria uma caixa com scroll horiontal e vertical
+
+você pode ocultar um elemento, com a class invisible.
+
+FONT AWESOME:
+
+é uma biblioteca de icones para usar nos projetos
+acessando o site: https://fontawesome.com/icons
+e importando a biblioteca no css e js
+
+para aumentar o tamanho, use fa-?x no lugar do ? use o numero de vezes
+para colocar o icone ele normalmente usa a tag <i> com a class que está no site
+para mudar os pontos de uma lista, use a tag i com a class fa-li antes de todas as outras e a fa-ul na propria
+
+
+

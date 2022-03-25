@@ -221,7 +221,14 @@ para criar um layout para dispositivos diferentes use @media (max-width: 425px){
 é bom trabalhar com os break points
 que são: desktop 1024, tablet 768 e celular 320
 
+POST DE BLOG:
 
+é uma boa pratica definir o font-size: 62.5%; no html que equivale a 10px para unificar a fonte em muitos navegadores
+se quer limitar a sua pagina, pode botar tudo dentro de um conteiner, e limitar o tamanho dele, assim tendo mais controle
+
+EMAIL MARKETING:
+
+se adicionar (tr>td)*3 o emmet ja de adiciona 3 linhas e colunas
 
 
 

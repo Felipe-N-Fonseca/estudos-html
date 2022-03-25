@@ -1,0 +1,151 @@
+VARIAVEIS:
+
+para decalarar uma variavel, use var a = 10
+var é para variaveis globais enquanto let é para locais
+assim a variavel a recebe 10
+const é para variaveis imutaveis
+as listas funcionam simplesmente com []
+
+OPERADORES:
+
+a função Math.round() arredonda números
+parseInt() para transformar em inteiro
+
+CONDICIONAIS:
+
+var cor = 'cinza'
+var meucarro = cor == 'preto' ? 'preto' : 'branco'
+vai ser preto se a cor for igual a preto, se não, vai ser branco
+
+o elif de python aqui se representa else if
+a função switch (){ serve para decalararcasos que algo se aplica
+    case 'preto':
+        cor = preto;
+        break;
+    default :
+        console.log();
+
+}
+
+LAÇOS:
+
+for(var; condição; o que aontece a cada ciclo){
+    console.log()
+}
+var c = 1;
+while(c > 0){
+    c--
+}
+
+document.addEventListener("evento", function( evento ){
+    codigo executado quando for cahamado o evento determinado
+
+    evento.preventDefault(); vai impedir de ser enviado um formlario
+})
+
+
+new formData(var); vai capturar os dados de um formulário e transformar em um dicionário
+com o name do input e o valor recebido
+
+para pegar as keys é só usar .keys
+para pegar os dados dessa variavel use .get(var)
+para adicionar dados a uma lista use .push()
+
+DOM - CORE:
+
+seleciona o objeto e depois os metodos
+
+exemplos:
+
+document.getElementById(id) pega um objeto pelo id
+document.getElementsByTagName('div') pega uma tag pelo nome
+document.createElement('div') cria um elemento no html
+parentNode.appendChild(node) // html.appendChild('body') adiciona um elemento dentro de uma tag pai
+element.innerHTML sobe uma alteração para o html
+element.style sobe uma alteração para o css
+element.setAttribute('name') 
+element.getAttribute('name')
+element.addEventListener() fica observando um determinado evento
+window.location passa os dados da pagina
+window.onload quando carregar a pagina
+console.log() mostra algo no console
+window.scrollTo(x, y) vai até a coordenada na pagina
+window.alert() mostra um alerta de página
+.write() estcreve na página
+
+
+innerText pega o texto dentro da tag
+innerHTML pega o codigo html
+
+
+SELETORES:
+
+getElementById()
+getElementsByTagName()
+getElementsByName()
+getElementsByClassName()
+
+quando retorna com # é pq aquilo é o id 
+quando retorna com . é a calasse 
+
+para mexer com o css use .style depois da decalaração dos seletores
+innerText para mudar um texto do elemento
+
+FORMULÁRIOS:
+
+ai usar o document.getElementById().addEventListener(){
+    var dados = new formData(this)
+    o this pega o valor recebido ai em cima
+
+}
+
+isNaN() checa se é um valor númerico
+
+o evento focus é quando o input está selecionado e o focusout é o contrario
+
+querySelector() pega o primeiro elemento pela class 
+querySelectorAll() pega todos os elementos pela class
+
+.classList serve para adicionar ou remover uma class de um elemento
+.add() ou .remove()
+
+. match() checa se encontra algo ali
+
+.getAttribute() pega um atributo do elemento
+
+REGEX:
+
+é um meio de encontrar padrões dentro de codigos, arquivos e textos
+pode ser usado tanto para buscar, verificar e substituir trexos e padrões.
+
+[]: tudo que for digitado dentro de um colchete, sera buscado
+[0] = busca por toda ocorrencia de 0
+[02] = busca por toda ocorrencia de 0 e 2 
+[0-9] = busca por toda ocorrencia de números entre 0 e 9
+[0][0] = busca por toda ocorrencia de 00 jntos
+[0]{3} = busca por 3 ocorrencias do caractere 0 ou seja 000 chaves são multiplicadores
+[0-9]{6} = destaca os 6 primeiros digitos, se tiver menos que 6 ou uma letra no meio, não há destaque
+$ = o fim da linha
+^ = começo da linha
+^[0-9]{6}$ = apenas os que tiverem 6 caracteres númericos
++ = número qualquer de ocorrencias acima de 1
+[0-9]+[-][a-z] = encontra qualquer quantidade de números com um - e uma letra
+() = seleção de grupos para a substituição que começa apartir do $1
+para substituir use $1/$2 e etc
+i ignora se a fonte é maiuscula ou minuscula
+
+no caso do js:
+
+* = número qualquer de ocorrencias de 0 ao infinito
+\ = quando em sua frente tiver um caractere não especial, ele o torna especial se tiver função, porém quando for * por exemplo, ele passa a ser interpretado de forma literal
+. = corresponde a qualquer caractere exceto pela quebra de linha
+
+EVENTOS:
+
+mouseenter é quando o mouse entra no objeto
+mousemove é quando o mouse se move la dentro
+mousedown quando aperta e segura
+mouseup quando solta o botão
+click quando se clica e solta o mouse
+mouseout quando se sai do elemento
+
