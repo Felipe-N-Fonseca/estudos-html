@@ -1,0 +1,95 @@
+SELETORES:
+
+para chamar uma função de jquery se começa com:
+jQuery('nome do que procura') 
+
+por exemplo, para alterar o texto de todos os h4 de um site, em js, se precisaria:
+
+let titulos = document.querySelectorAll('h4');
+for(let i = 0; i < titulos.length; i++){
+    titulos[i].textContent = 'título aleatório';
+}
+
+e no jQuery só se precisa fazer:
+
+jQuery('h4').text('título aleatório');
+
+a função .text() pega os textos da tag e pode ser usada para inserir também
+.first() pega apenas o primeiro
+
+
+a forma segura de usar o jquery tendo outras bibliotecas é:
+
+jQuery(function($){ ou $(document).ready(function(){
+
+    $('h1')     = por tag
+    $('.class') = por class
+    $('#id')    = por id
+    $('h1, h2') = composta pega ambos
+    $('div h2') = pega apenas os h2 dentro de uma div
+    $('h1:first-child')
+
+})
+
+isso acontece porque o jQuery usa o $ como simbolo pra ser chamado, e outras bibliotecas podem usar o mesmo
+
+MANIPULAÇÃO DE HTML:
+
+.append() adiciona algo dentro do elemento selecionado
+.prepend() adiciona algo como tag pai do elemento selecionado
+.after() adiciona algo como tag irmã depois do elemento selecionado
+.before() adiciona algo como tag irmã antes do elemento selecionado
+.hide() aplica o display none em um objeto, ocultando ele
+.show() traz de volta
+.remove() deleta um elemento, sendo assim o show não consegue trazer de volta
+
+MANIPULAÇÃO DE CSS:
+
+.fadeIn(2000) é um efeito de entrada, usa o mesmo que o .show mas com um efeito de trasição
+.fadeOut(2000) faz a saida com efeito de transição
+.css('color', '#ffffff') passa primeiro o que quer mudar no elemento e depois o que vai mudar
+.css({
+    'color': '#fff',
+    'background': '#f00'
+})
+
+EVENTOS:
+
+$(objeto).click(function(){
+    $(this).css({
+    'color': '#fff',
+    'background': '#f00'
+    })
+}) = vai mudar esses parametros quando o objeto sofrer um click
+
+$(objeto).dblclick(function(){
+    $(this).css({
+    'color': '#fff',
+    'background': '#f00'
+    })
+}) = vai mudar esses parametros quando o objeto sofrer um duplo click
+
+$(objeto).mouseenter(function(){
+    console.log($(this).find('h4').text())
+}) = vai encontrar o texto de um h4 dentro do elemento quando o mouse entrar dentro da sua área
+
+$(objeto).mouseleave(function(){
+    console.log($(this).find('h4').text())
+}) = vai encontrar o texto de um h4 dentro do elemento quando o mouse sair de dentro da sua área
+
+$(objeto).hover(
+    function(){
+        console.log($(this).find('h4').text())
+    },
+    function(){
+        console.log($(this).find('h4').text()
+    }
+    }) = a primeira faz a função de mouseenter e a segunda de mouseleave
+
+outra forma de fazer isso é:
+
+$(objeto).on('blur', function(){
+    console.log($(this).find('h4').text())
+}) = que é o mesmo esquema do eventlistner.
+
+

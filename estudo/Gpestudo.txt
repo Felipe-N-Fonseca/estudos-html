@@ -1,0 +1,67 @@
+INTRODUÇÃO:
+
+O gulp pode ser usado para transmutar outras linguagens para o js
+para unir varios arquivos em um só
+para transformar arquivos comuns em optimizados com a versão minificada
+
+GERENCIAMENTO DE DEPENDENCIAS:
+
+para abrir o gulp em um projeto:
+crie um package: npm init -y
+instale as bibliotecas com o: npm install jquery (no caso do jquery)
+crie um .gitignore com os arquivos:
+node_modules
+package-lock.json
+
+adicione as devdependences
+
+para instalar de um projeto que veio com ele, use o npm install
+
+MINIFICAÇÃO DE CÓDIGO:
+
+crie um gulpfile.js para que dentro dele entre toda a automação que será feita nos seus arquivos
+importe gulp nele com uma const var = require('gulp')
+chame a pasta que quiser os arquivos com o src
+cahame um .pipe() que é o metodo de tratamento dos arquivos depois de selecionados no gulp
+o mais importante de trabalhar é o gulp.dist() em que você seleciona um novo local onde esses arquivos serão jogados quando o projeto estiver concluido
+então bote pra retorno da função com o return
+coloque uma chamada pra função: exports.styles = tarefasCSS
+assim que o codigo ficar pronto, chame gulp styles no terminal
+
+para compactar todos os arquivos em um só e minificar o css chame no terminal o npm install gulp-concat gulp-cssmin --save-dev
+o --save-dev serve pra salvar como dependencia de desenvolvedor
+para mudar o nome dos arquivos chame no terminal npm install gulp-rename --save-dev
+para o js é o gulp-uglify
+para imagens é o gulp-image 
+os pipes de images são:
+
+         .pipe(image({
+            pngquant: true,
+            optipng: false,
+            zopflipng: true,
+            jpegRecompress: false,
+            mozjpeg: true,
+            gifsicle: true,
+            svgo: true,
+            concurrent: 10,
+            quiet: true
+        }))
+
+é importante importar as bibliotecas na ordem no gulp antes da minificação pois após isso ele terá uma compatibilidade maior
+
+./** (pega qualquer diretorio ali dentro) /*.css (pega qualquer arquivo . css que tiver ali)
+
+NODE.JS VISÃO GERAL:
+
+a fim de organização, a pasta src é para códigos que você está mexendo, imagens que está trazendo e por ai vai.
+a pasta vendor é para códigos de terceiros, como bibliotecas que não tem importação pelo gulp.
+
+o node trabalha de forma modular, por isso precisamos dar o exports nas funções, assim elas passam a funcionar nele
+
+fazer o return callback é para qua assim que ele terminar aquela tarefa ele ja iniciar outra
+
+da para fazer pesquisas facilmente de bibliotecas para o gulp, se não no site do npm, na rede mesmo com a pesquisa tipo:
+minify html gulp task
+
+para abrir o "servidor local", depois de ter instalado o npm install --global http-server, use o http-server ./diretorio
+

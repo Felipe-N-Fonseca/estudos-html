@@ -40,7 +40,7 @@ while(c > 0){
 document.addEventListener("evento", function( evento ){
     codigo executado quando for cahamado o evento determinado
 
-    evento.preventDefault(); vai impedir de ser enviado um formlario
+    evento.preventDefault(); vai impedir o comportamento padrão do que se observa, fazendo com que seja controlado pela função onde ele está.
 })
 
 
