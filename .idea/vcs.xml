@@ -3,6 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/JavaScript/JavaScript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Jquery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bootstrap" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dados-prof/curso-frontend" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/frontend" vcs="Git" />
   </component>

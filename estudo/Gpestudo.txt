@@ -65,3 +65,21 @@ minify html gulp task
 
 para abrir o "servidor local", depois de ter instalado o npm install --global http-server, use o http-server ./diretorio
 
+GERENCIAMENTO DE TAREFAS:
+
+para a sincronização do servidor local mais facil, usa-se a biblioteca browser-sync, declara no gulpfile:
+
+            const browserSync = require('browser-sync').create
+            const reload = browserSync.reload
+
+para declarar a tarefa:
+
+gulp.task('serve', function(){
+    browserSync.init({
+        server: {
+            baseDir: "./diretório"
+        }
+    })
+    gulp.watch('./dist/**/*').on('change', reload) 
+        vai observar o dist e com qualquer mudança ele vai executar o reload
+})
